@@ -1,0 +1,23 @@
+var x;
+var name = x;
+
+6, 17;
+3.14157;
+
+var number1 = 14;
+var number2 = 9;
+number1 * number2;
+
+var a =1;
+a++;
+++a;
+a--;
+--a;
+
+"text";
+'also text';
+
+"some" + "text";
+
+1 >= 1;
+1 === 1;
