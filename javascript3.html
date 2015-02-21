@@ -5,12 +5,72 @@
   <title>Document</title>
 <script type="text/javascript">
 
+
+//fortune teller
+
 function fortuneTeller(number_of_children, partners_name, city, job){
-  console.log("You will be married to " + partners_name + " with " + number_of_children + " children, living in " + city +" working as a " + job)
+  console.log("You will be married to " + partners_name + " with " + number_of_children + " children, living in " + city +" working as a " + job);
 };
 
 fortuneTeller(3, "Jenni", "Munich", "Junior Developer");
 fortuneTeller(6, "Michelle", "Toronto", "Restructure");
+
+// The age calculator
+
+function calculateAge(birth_year){
+  var currentYear = new Date().getFullYear();
+  console.log("You're either " + (currentYear - birth_year) + " or " + ((currentYear - birth_year) - 1));
+};
+
+calculateAge(1990);
+calculateAge(1955);
+calculateAge(1921);
+
+// the liftime supply 
+
+function calculateSupply(age, amount_per_day){
+  var maxAge = 85;
+  var amount_needed = (maxAge-age)*amount_per_day;
+  console.log("You will need "+ amount_needed +" to last you until the ripe old age of "+ maxAge);
+};
+
+calculateSupply(5, 10);
+calculateSupply(24, 3);
+
+// Geometrizer
+
+function calcCircumferance(radius){
+
+      var circumferance = radius * 2 * Math.PI;
+      console.log("The circumferance is " + circumferance);
+      var area = Math.pow(radius, 2) * Math.PI;
+      console.log("The area is " + area);
+};
+
+calcCircumferance(3);
+calcCircumferance(12);
+
+// The Temperature Converter
+
+function celsiusToFahrenheit(celsius) {
+  var fahrentheit = (celsius + 32) * (9/5);
+  var fahrentheitRounded = Math.round(fahrentheit);
+  console.log("The temperature in Fahrenheit is " + fahrentheitRounded);
+};
+
+celsiusToFahrenheit(12);
+celsiusToFahrenheit(14);
+celsiusToFahrenheit(30);
+
+function fahrenheitToCelsius(fahrentheit){
+  var celsius = (fahrentheit - 32) * (5/9);
+  var celsiusRounded = Math.round(celsius);
+  console.log("The temperature in Celsius is " + celsiusRounded);
+};
+
+fahrenheitToCelsius(94);
+fahrenheitToCelsius(39);
+fahrenheitToCelsius(68);
 
 
 </script>
