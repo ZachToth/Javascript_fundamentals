@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+
+//What's a big number?
+
+function greaterNum(num1, num2){
+  if (num1 > num2){
+    console.log(num1);
+  }
+  else if(num2 > num1){
+    console.log(num2);
+  }
+  else if(num1 === num2){
+    console.log("The numbers are the same value!")
+  }
+};
+greaterNum(2,5)
+greaterNum(4,2)
+greaterNum(3,3)
+
+//The Word Translator
+
+function helloWorld(languagecode){
+  if (languagecode === "de"){
+    console.log("Hallo Welt!");
+  }
+  else if (languagecode === "fr"){
+    console.log("Bonjour Le Monde!");
+  }
+  else if (languagecode === "sp"){
+    console.log("Hola Munda!");
+  }
+  else {
+    console.log("Hello World!");
+  }
+}
+
+helloWorld("de");
+helloWorld("fr");
+helloWorld("sp");
+helloWorld("en");
+
+// The grade assigner!
+
+function assignGrade(score){
+if (score === 1){
+  console.log("A");
+}
+else if (score === 2){
+  console.log("B");
+}
+else if (score === 3){
+  console.log("C");
+}
+else if (score === 4){
+  console.log("D");
+}
+else if (score === 5){
+  console.log("E");
+}
+else {
+  console.log("F");
+}
+}
+
+
+assignGrade(1);
+assignGrade(5);
+assignGrade(7);
+assignGrade(2);
+
+// The Pluralizer
+
+function pluralize(noun, number){
+if (number === 1){
+  document.write(number + " " + noun + "<br />");
+}
+else {
+  document.write(number + " " + noun + "s" + "<br />");
+}
+}
+
+pluralize("cat", 1);
+pluralize("dog", 0);
+pluralize("dog", 5);
+
+
+//your top choices
+var favourites = new Array("blue", 2, "red", "S.O.A.D.");
+document.write("My favourite things are:" + "<br />");
+for (var i = 1; i < (favourites.length + 1); i++){
+    document.write( i + ". " + favourites[i] + "<br />")
+}
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
