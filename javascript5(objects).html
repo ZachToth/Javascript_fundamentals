@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+
+// The recipe card
+  var recipe = new Object()
+  recipe.title = "Casarole";
+  recipe.servings = "Servings: 5";
+  recipe.ingredients =["12 eggs", "8 large potatoes", "1 roll calbasa"]
+
+console.log(recipe.title)
+console.log(recipe.servings)
+console.log("Ingredients:")
+console.log(recipe.ingredients[0])
+console.log(recipe.ingredients[1])
+console.log(recipe.ingredients[2])
+
+// The Reading List
+
+var books = [{title: "Game of thrones", author: "George R.R. Martin", alreadyRead: false}, {title: "Gone Girl", author: "Some author", alreadyRead: true}]
+
+for(var i = 0; i < books.length; i++){
+  var book = books[i];
+  if (book.alreadyRead){
+  console.log(book.title + " was written by " + book.author + "and you have read this book")}
+  else{
+    console.log(book.title + " was written by " + book.author + "and you have not read this book")
+  }
+}
+</script>
+</head>
+<body
+  
+</body>
+</html>
